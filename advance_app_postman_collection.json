@@ -1,0 +1,131 @@
+{
+  "info": {
+    "name": "Advance App API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Tours",
+      "item": [
+        {
+          "name": "Create Tour",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/tours"
+          }
+        },
+        {
+          "name": "Get Tour",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/tours/:id"
+          }
+        },
+        {
+          "name": "Update Tour",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/tours/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "item": [
+        {
+          "name": "Add Event to Tour",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/tours/:id/events"
+          }
+        },
+        {
+          "name": "Get Event",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/events/:id"
+          }
+        },
+        {
+          "name": "Update Event",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/events/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Advances",
+      "item": [
+        {
+          "name": "Add Advance",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/events/:id/advances"
+          }
+        },
+        {
+          "name": "Get Advance",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/advances/:id"
+          }
+        },
+        {
+          "name": "Update Advance",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/advances/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Templates",
+      "item": [
+        {
+          "name": "List Templates",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/templates"
+          }
+        },
+        {
+          "name": "Save New Template",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/templates"
+          }
+        },
+        {
+          "name": "Save Advance as Template",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/advances/:id/save-as-template"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Field Library",
+      "item": [
+        {
+          "name": "Get Field Library",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/fields"
+          }
+        },
+        {
+          "name": "Add Field",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/fields"
+          }
+        }
+      ]
+    }
+  ]
+}
